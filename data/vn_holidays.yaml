@@ -1,0 +1,147 @@
+# Vietnamese public holidays — observed market closures (HOSE/HNX/UPCOM).
+#
+# Sources:
+#   - Vietnamese Labor Code (Article 112) — solar holidays.
+#   - Official HOSE/HNX market closure notices for Tet (Lunar New Year),
+#     Hung Kings Festival, and observed-day shifts when a holiday falls
+#     on a weekend.
+#
+# Notes:
+#   - Tet covers Lunar New Year's Eve + 4 days (5-day block) by law since 2013.
+#   - Hung Kings: 10th day of 3rd lunar month, converted to solar.
+#   - When a fixed holiday lands on a weekend, the next Monday is observed
+#     (per Article 111). Bridge days are added only when officially announced.
+
+holidays:
+  # ===== 2018 =====
+  - "2018-01-01"  # New Year's Day
+  - "2018-02-14"  # Tet Eve (lunar 29/12)
+  - "2018-02-15"  # Tet Day 1 (Mau Tuat)
+  - "2018-02-16"  # Tet Day 2
+  - "2018-02-19"  # Tet Day 3 (observed Mon after weekend)
+  - "2018-02-20"  # Tet Day 4 (observed)
+  - "2018-04-25"  # Hung Kings Festival (10/3 lunar)
+  - "2018-04-30"  # Reunification Day
+  - "2018-05-01"  # Labour Day
+  - "2018-09-03"  # National Day (observed — Sep 2 is Sunday)
+
+  # ===== 2019 =====
+  - "2019-01-01"  # New Year's Day
+  - "2019-02-04"  # Tet Eve (lunar 30/12)
+  - "2019-02-05"  # Tet Day 1 (Ky Hoi)
+  - "2019-02-06"  # Tet Day 2
+  - "2019-02-07"  # Tet Day 3
+  - "2019-02-08"  # Tet Day 4
+  - "2019-04-14"  # Hung Kings Festival — falls on Sunday
+  - "2019-04-15"  # Hung Kings observed (Mon)
+  - "2019-04-29"  # Reunification observed (Apr 30 announced day off pre-30)
+  - "2019-04-30"  # Reunification Day
+  - "2019-05-01"  # Labour Day
+  - "2019-09-02"  # National Day
+
+  # ===== 2020 =====
+  - "2020-01-01"  # New Year's Day
+  - "2020-01-23"  # Tet Eve (lunar 29/12)
+  - "2020-01-24"  # Tet 30 — Friday
+  - "2020-01-27"  # Tet Day 3 observed (Mon)
+  - "2020-01-28"  # Tet Day 4 observed
+  - "2020-01-29"  # Tet Day 5 observed
+  - "2020-04-02"  # Hung Kings Festival (10/3 lunar)
+  - "2020-04-30"  # Reunification Day
+  - "2020-05-01"  # Labour Day
+  - "2020-09-02"  # National Day
+
+  # ===== 2021 =====
+  - "2021-01-01"  # New Year's Day
+  - "2021-02-10"  # Tet Eve (lunar 29/12)
+  - "2021-02-11"  # Tet Day 1 (Tan Suu)
+  - "2021-02-12"  # Tet Day 2
+  - "2021-02-15"  # Tet Day 3 observed (Mon)
+  - "2021-02-16"  # Tet Day 4 observed
+  - "2021-04-21"  # Hung Kings Festival (10/3 lunar)
+  - "2021-04-30"  # Reunification Day
+  - "2021-05-03"  # Labour Day observed (May 1 is Sat)
+  - "2021-09-02"  # National Day
+  - "2021-09-03"  # National Day (extra observed)
+
+  # ===== 2022 =====
+  - "2022-01-03"  # New Year's Day observed (Jan 1 is Sat)
+  - "2022-01-31"  # Tet Eve (lunar 29/12) — Mon
+  - "2022-02-01"  # Tet Day 1 (Nham Dan)
+  - "2022-02-02"  # Tet Day 2
+  - "2022-02-03"  # Tet Day 3
+  - "2022-02-04"  # Tet Day 4
+  - "2022-04-11"  # Hung Kings observed (Apr 10 is Sun)
+  - "2022-05-02"  # Reunification observed (Apr 30 is Sat)
+  - "2022-05-03"  # Labour Day observed (May 1 is Sun)
+  - "2022-09-01"  # National Day extra observed
+  - "2022-09-02"  # National Day
+
+  # ===== 2023 =====
+  - "2023-01-02"  # New Year's Day observed (Jan 1 is Sun)
+  - "2023-01-20"  # Tet Eve (lunar 29/12) — Fri
+  - "2023-01-23"  # Tet Day 2 observed (Lunar 1/1 Sun)
+  - "2023-01-24"  # Tet Day 3 observed
+  - "2023-01-25"  # Tet Day 4 observed
+  - "2023-01-26"  # Tet Day 5 observed
+  - "2023-04-29"  # Hung Kings Festival (10/3 lunar) — Sat... HOSE closed Mon
+  - "2023-05-01"  # Labour Day
+  - "2023-05-02"  # Reunification observed (Apr 30 is Sun)
+  - "2023-05-03"  # Extra observed
+  - "2023-09-01"  # National Day extra observed
+  - "2023-09-04"  # National Day observed (Sep 2 is Sat)
+
+  # ===== 2024 =====
+  - "2024-01-01"  # New Year's Day
+  - "2024-02-08"  # Tet Eve (lunar 29/12) — Thu
+  - "2024-02-09"  # Tet 30 — Fri
+  - "2024-02-12"  # Tet Day 3 observed (Mon)
+  - "2024-02-13"  # Tet Day 4 observed
+  - "2024-02-14"  # Tet Day 5 observed
+  - "2024-04-18"  # Hung Kings Festival (10/3 lunar)
+  - "2024-04-29"  # Reunification bridge (between weekend + Apr 30)
+  - "2024-04-30"  # Reunification Day
+  - "2024-05-01"  # Labour Day
+  - "2024-09-02"  # National Day
+  - "2024-09-03"  # National Day extra observed
+
+  # ===== 2025 =====
+  - "2025-01-01"  # New Year's Day
+  - "2025-01-27"  # Tet Eve -1 (bridge)
+  - "2025-01-28"  # Tet Eve (lunar 29/12)
+  - "2025-01-29"  # Tet Day 1 (At Ty) — lunar 1/1
+  - "2025-01-30"  # Tet Day 2
+  - "2025-01-31"  # Tet Day 3
+  - "2025-02-03"  # Tet Day 4 observed (Mon)
+  - "2025-04-07"  # Hung Kings observed (Apr 6 is Sun)
+  - "2025-04-30"  # Reunification Day
+  - "2025-05-01"  # Labour Day
+  - "2025-09-01"  # National Day extra observed
+  - "2025-09-02"  # National Day
+
+  # ===== 2026 =====
+  - "2026-01-01"  # New Year's Day
+  - "2026-01-02"  # Bridge (estimate)
+  - "2026-02-16"  # Tet Eve -1 (estimate)
+  - "2026-02-17"  # Tet Eve (lunar 29/12) — estimate
+  - "2026-02-18"  # Tet Day 1 (Binh Ngo) — lunar 1/1
+  - "2026-02-19"  # Tet Day 2
+  - "2026-02-20"  # Tet Day 3
+  - "2026-04-27"  # Hung Kings observed (Apr 26 is Sun)
+  - "2026-04-30"  # Reunification Day
+  - "2026-05-01"  # Labour Day
+  - "2026-09-02"  # National Day
+
+  # ===== 2027 =====
+  - "2027-01-01"  # New Year's Day
+  - "2027-02-05"  # Tet Eve -1 (estimate)
+  - "2027-02-08"  # Tet Day 1 (Dinh Mui) — lunar 1/1
+  - "2027-02-09"  # Tet Day 2
+  - "2027-02-10"  # Tet Day 3
+  - "2027-02-11"  # Tet Day 4
+  - "2027-02-12"  # Tet Day 5
+  - "2027-04-16"  # Hung Kings Festival (10/3 lunar)
+  - "2027-04-30"  # Reunification Day
+  - "2027-05-03"  # Labour Day observed (May 1 is Sat)
+  - "2027-09-02"  # National Day
+  - "2027-09-03"  # National Day extra observed

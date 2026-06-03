@@ -1,0 +1,54 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "vn-market-calendar"
+version = "0.1.0"
+description = "Trading calendar for Vietnamese stock exchanges (HOSE, HNX, UPCOM)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "DataCore Vietnam", email = "dev@datacore.vn" }]
+keywords = ["vietnam", "stock-exchange", "trading-calendar", "hose", "hnx", "upcom"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Office/Business :: Financial",
+]
+dependencies = ["pyyaml>=6.0"]
+
+[project.optional-dependencies]
+pandas = ["pandas>=2.0"]
+dev = ["pytest>=8.0", "pytest-cov>=5.0", "ruff>=0.4", "pandas>=2.0"]
+
+[project.scripts]
+vn-market-calendar = "vn_market_calendar.__main__:main"
+
+[project.urls]
+Homepage = "https://github.com/DataCore-VietNam/vn-market-calendar"
+Issues = "https://github.com/DataCore-VietNam/vn-market-calendar/issues"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/vn_market_calendar"]
+
+[tool.hatch.build.targets.wheel.force-include]
+"src/vn_market_calendar/data/vn_holidays.yaml" = "vn_market_calendar/data/vn_holidays.yaml"
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "W", "I", "B", "UP", "SIM"]
+ignore = ["E501"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-ra"
