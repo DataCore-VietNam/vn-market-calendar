@@ -2,8 +2,7 @@ name: Scorecard
 on:
   branch_protection_rule:
   schedule:
-    - cron: "20 14 * * 1"→ Runs at 14:20, only on Monday
-
+    - cron: "20 14 * * 1"
   push:
     branches: [main]
 permissions: read-all
@@ -31,4 +30,3 @@ jobs:
           name: SARIF file
           path: results.sarif
           retention-days: 5
-
