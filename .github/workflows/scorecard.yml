@@ -2,7 +2,8 @@ name: Scorecard
 on:
   branch_protection_rule:
   schedule:
-    - cron: "20 14 * * 1"
+    - cron: "20 14 * * 1"→ Runs at 14:20, only on Monday
+
   push:
     branches: [main]
 permissions: read-all
@@ -19,7 +20,7 @@ jobs:
         with:
           persist-credentials: false
       - name: Run analysis
-        uses: ossf/scorecard-action@f49aabe8e4e3f6f4a01b77b1164f5aa1c1c84bce # v2.4.1
+        uses: ossf/scorecard-action@f49aabe0b5af0936a0987cfb85d86b75731b0186 # v2.4.1
         with:
           results_file: results.sarif
           results_format: sarif
@@ -30,3 +31,4 @@ jobs:
           name: SARIF file
           path: results.sarif
           retention-days: 5
+
